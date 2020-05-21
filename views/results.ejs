@@ -1,0 +1,28 @@
+<%- include("../partials/header") %>
+
+<div id="main">
+	
+
+<h2 style="text-align:center">
+	<%= data["current_date"] %>
+</h2>
+
+	<h3>Your horoscope:</h3>
+		<p><%= data["description"] %></p>
+
+	<h3>Most compatible sign:</h3>
+		<p><%= data["compatibility"] %></p>
+</div>
+
+<a href="/">
+	Home
+</a>
+
+
+<%- include("../partials/footer") %>
+
+		
+	
+
+	
+

@@ -1,0 +1,39 @@
+* {
+	font-family: 'Croissant One', cursive;
+	color: white;
+	background-color: black;
+}
+
+#main {
+	margin: 2em auto;
+	text-align: center;
+}
+
+#form {
+	margin-top: 50px;
+}
+
+ .signInput, .dayInput { 
+	 border-color:#cccccc; 
+	 font-size:28px; 
+	 padding:15px; 
+	 border-width:0px; 
+	 border-style:hidden; 
+	 box-shadow: 1px 1px 6px 0px rgba(232,144,240,.68); 
+	 text-shadow:0px 0px 0px rgba(42,42,42,.75);  
+
+	} 
+.css-input:focus { 
+	outline:none; 
+	} 
+
+
+.zodiac {
+	height: 200px;
+	width: 200px;
+	border: none;
+}
+
+button {
+	border: none;
+}
