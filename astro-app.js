@@ -62,8 +62,8 @@ app.get("/results", function(req, res){
 
 
 
-app.listen(3000, function() { 
-  console.log('Astro App has started.') 
-});
+app.listen(process.env.PORT || 5000);
+
+
 
 /// if sign is taurus, set attribute to (...)
