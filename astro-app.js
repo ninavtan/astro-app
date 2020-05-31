@@ -32,22 +32,25 @@ app.get("/results", function(req, res){
 	form: {}
 	};
 	
+	
 	request(options, function (error, response, body) {
 	if (error) throw new Error(error);
 
 	
-		var data = JSON.parse(body);
-		console.log(body);
-		res.render("results", {data: data});
+		var Astrodata = JSON.parse(body);
+		res.render("results", {data: {Astrodata:Astrodata, sign:sign}});
+		console.log(Astrodata);
+
+	
 		
+
+		
+		
+
 });
+
 });
 
-////
-
-// 
-
-// take variables and send to api 
 
 
 
@@ -62,3 +65,5 @@ app.get("/results", function(req, res){
 app.listen(3000, function() { 
   console.log('Astro App has started.') 
 });
+
+/// if sign is taurus, set attribute to (...)

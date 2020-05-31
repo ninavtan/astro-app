@@ -1,22 +1,49 @@
-<%- include("../partials/header") %>
+<%- include("../partials/header2") %>
 
-<div id="main">
-	
+<a href="/">Home</a>
+<h1 id="current-date"> Today is <%= data.Astrodata.current_date %>.</h1>
+<div class="card">
+    
+    <div class="card-circle">
+        <div class="card-text">
 
-<h2 style="text-align:center">
-	<%= data["current_date"] %>
-</h2>
+            <h1 id="your-sign">Your sign: <%= data.sign %></h1>
+            <h2 id="horo"><%= data.Astrodata.description %></h2>
 
-	<h3>Your horoscope:</h3>
-		<p><%= data["description"] %></p>
+            <h1><%= data.compatibility %> </h1>
+            
+            <h2>Compatibility: <%= data.Astrodata.compatibility %> </h2>
+            <h2>Color: <%= data.Astrodata.color %> </h2>
+            <h2>Lucky number: <%= data.Astrodata.lucky_number %> </h2>
 
-	<h3>Most compatible sign:</h3>
-		<p><%= data["compatibility"] %></p>
+
+
+        </div>
+    </div>
 </div>
 
-<a href="/">
-	Home
-</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script> 
+    let zodiacSign = document.getElementById("zodiacSign")
+    zodiacSign.setAttribute("value", "<%= data.sign %>")
+    
+    </script>
+
+    
+
+
 
 
 <%- include("../partials/footer") %>

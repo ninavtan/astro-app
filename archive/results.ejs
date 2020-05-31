@@ -1,0 +1,45 @@
+<%- include("../partials/header2") %>
+
+
+
+
+
+
+
+
+
+<a-text align="center" value="Today is <%= data.Astrodata.current_date %>." position="0 3 -2"></a-text>
+<a-text align="center" value="Your sign: <%= data.sign %>" position="0 2 -2"></a-text>
+<a-text align="center" value="<%= data.Astrodata.description %>" position="0 1 -2"></a-text>
+
+<a-text id="zodiacSign" align="center" value="" position="4 3 -1"></a-text>
+
+
+
+
+
+
+
+
+
+<a-entity cursor="rayOrigin:mouse"></a-entity>
+
+<script> 
+    let zodiacSign = document.getElementById("zodiacSign")
+    zodiacSign.setAttribute("value", "<%= data.sign %>")
+    
+     
+    </script>
+    
+
+
+console.log(data.sign)
+
+
+<%- include("../partials/footer") %>
+
+		
+	
+
+	
+

@@ -1,12 +1,15 @@
 * {
 	font-family: 'Croissant One', cursive;
-	color: white;
+}
+
+body {
 	background-color: black;
 }
 
 #main {
 	margin: 2em auto;
 	text-align: center;
+	color: white;
 }
 
 #form {
@@ -34,6 +37,74 @@
 	border: none;
 }
 
+
+
 button {
 	border: none;
+	background-color: black;
+}
+
+p {
+	color: white;
+}
+
+.card {
+	display: block;
+	text-align: center;
+	/* background: #31DCDF !important; */
+	background: url('http://api.thumbr.it/whitenoise-361x370.png?background=31DCDFff&noise=626262&density=11&opacity=22');
+	width: 500px;
+	height: 750px;
+	margin: 0 auto;
+	border: 8px solid;
+	border-color: #FFBE23;
+	border-radius: 3px;
+	position: relative;
+	z-index: -2;
+	-webkit-box-shadow: -1px 3px 29px 10px rgba(255,255,255,1);
+-moz-box-shadow: -1px 3px 29px 10px rgba(255,255,255,1);
+box-shadow: -1px 3px 29px 10px rgba(255,255,255,1);
+
+}
+
+.card:hover {
+	transform: rotateY(180deg);
+}
+
+.card-text {
+	padding: 2rem;
+	position: relative;
+	z-index: 0;
+	color: black;
+	text-align: center;
+
+
+}
+
+.card-circle {
+	height: 700px;
+	width: 85%;
+	display: block;
+	margin: 25px auto;
+	background: url('http://api.thumbr.it/whitenoise-361x370.png?background=FFFFFFff&noise=626262&density=11&opacity=9');
+	border-radius: 50%;
+	position: relative;
+	z-index: -2;
+	border: 6px solid #FFBE23;
+
+}
+
+#horo {
+	margin-top: 5%;
+}
+
+#your-sign {
+	position: relative;
+	font-size: 1rem;
+	margin-top: 25%;
+}
+
+#current-date {
+	color: white;
+	text-align: center;
 }
