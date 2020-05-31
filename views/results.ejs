@@ -2,25 +2,33 @@
 
 <a href="/">Home</a>
 <h1 id="current-date"> Today is <%= data.Astrodata.current_date %>.</h1>
-<div class="card">
-    
-    <div class="card-circle">
-        <div class="card-text">
+<h1 id="your-sign">Hello, <%= data.sign %>.</h1>
 
-            <h1 id="your-sign">Your sign: <%= data.sign %></h1>
-            <h2 id="horo"><%= data.Astrodata.description %></h2>
+<div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <img src="https://astro-app-2020.s3.us-east-2.amazonaws.com/zodiac.jpg" alt="zodiac-card" style="width: 500px; height: 750px">
+        </div>
+        <div class="flip-card-back">
+            <div class="card">
+                <div class="card-circle">
+                    <div class="card-text">
 
-            <h1><%= data.compatibility %> </h1>
-            
-            <h2>Compatibility: <%= data.Astrodata.compatibility %> </h2>
-            <h2>Color: <%= data.Astrodata.color %> </h2>
-            <h2>Lucky number: <%= data.Astrodata.lucky_number %> </h2>
+                        
+                        <h2 id="horo"><%= data.Astrodata.description %></h2>
 
-
-
+                        <h1><%= data.compatibility %> </h1>
+                        
+                        <h2>Compatibility: <%= data.Astrodata.compatibility %> </h2>
+                        <h2>Color: <%= data.Astrodata.color %> </h2>
+                        <h2>Lucky number: <%= data.Astrodata.lucky_number %> </h2>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+</div>
+
 
 
 
